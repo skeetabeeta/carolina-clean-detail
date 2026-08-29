@@ -373,6 +373,9 @@
   .service-list li { display: flex; gap: 10px; font-size: 0.92rem; align-items: flex-start; }
   .service-list svg { flex: none; margin-top: 3px; color: var(--blue-strong); }
   .price-note { text-align: center; margin-top: 30px; color: var(--ink-faint); font-size: 0.86rem; }
+  .dropoff-note { margin-top: 14px; color: var(--ink-soft); font-size: 0.95rem; max-width: 60ch; }
+  .membership-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .price-per { font-size: 0.85rem; color: var(--ink-faint); font-weight: 500; margin-left: 4px; }
 
   /* ============ BEFORE / AFTER SLIDER ============ */
   .ba-wrap {
@@ -665,6 +668,7 @@
     .hero-inner { grid-template-columns: 1fr; padding-top: 52px; }
     .trust-grid { grid-template-columns: repeat(2, 1fr); }
     .services-grid { grid-template-columns: 1fr; }
+    .membership-grid { grid-template-columns: 1fr; }
     .ba-wrap { grid-template-columns: 1fr; }
     .work-grid { grid-template-columns: repeat(2, 1fr); }
     .reviews-grid { grid-template-columns: 1fr; }
@@ -693,6 +697,7 @@
     </a>
     <nav class="primary-nav">
       <a href="#services">Services</a>
+      <a href="#memberships">Memberships</a>
       <a href="#work">Recent Work</a>
       <a href="#reviews">Reviews</a>
       <a href="#contact">Contact</a>
@@ -710,6 +715,7 @@
   </div>
   <div class="mobile-nav wrap" id="mobileNav">
     <a href="#services">Services</a>
+      <a href="#memberships">Memberships</a>
     <a href="#work">Recent Work</a>
     <a href="#reviews">Reviews</a>
     <a href="#contact">Contact</a>
@@ -836,6 +842,61 @@
 
       </div>
       <p class="price-note">Prices shown are for sedans/coupes — SUVs, trucks &amp; extra-dirty vehicles are quoted at booking. Final price is always confirmed before your appointment.</p>
+    </div>
+  </section>
+
+  <!-- ================= MEMBERSHIPS ================= -->
+  <section class="section section-alt" id="memberships">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Keep it clean</span>
+        <h2>Maintenance memberships</h2>
+        <p>Skip the full detail every time — a standing plan keeps your car looking freshly-cleaned year-round, for less than one-off visits.</p>
+      </div>
+      <div class="membership-grid">
+
+        <div class="service-card">
+          <h3>Basic Upkeep</h3>
+          <p class="desc">A monthly reset to keep dust, pollen, and road film from building up.</p>
+          <div class="price">$59<span class="price-per">/month</span></div>
+          <ul class="service-list">
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Exterior hand wash</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Wheels &amp; tires cleaned</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Windows cleaned, inside &amp; out</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Once a month</li>
+          </ul>
+          <a class="btn btn-ghost btn-block" href="#booking">Start this plan</a>
+        </div>
+
+        <div class="service-card popular">
+          <span class="popular-tag">Best value</span>
+          <h3>Full Upkeep</h3>
+          <p class="desc">Wash plus a quick interior refresh — the sweet spot for daily drivers.</p>
+          <div class="price">$99<span class="price-per">/month</span></div>
+          <ul class="service-list">
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Everything in Basic Upkeep</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Interior vacuum &amp; wipe-down</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Tires shined</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Twice a month</li>
+          </ul>
+          <a class="btn btn-primary btn-block" href="#booking">Start this plan</a>
+        </div>
+
+        <div class="service-card">
+          <h3>Showroom Standing</h3>
+          <p class="desc">For the car you actually care about — full detail-level attention, on repeat.</p>
+          <div class="price">$179<span class="price-per">/month</span></div>
+          <ul class="service-list">
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Everything in Full Upkeep</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Ceramic spray sealant every visit</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Door jambs &amp; engine bay wipe-down</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Twice a month</li>
+          </ul>
+          <a class="btn btn-ghost btn-block" href="#booking">Start this plan</a>
+        </div>
+
+      </div>
+      <p class="price-note">Memberships are billed monthly, cancel anytime — ask about it at your next full detail or mention it in the booking form.</p>
     </div>
   </section>
 
@@ -999,11 +1060,13 @@
         <span class="eyebrow">Booking &amp; quotes</span>
         <h2>Book your detail</h2>
         <p>Fill this out and we'll confirm your appointment — or just send a quote if you're still deciding — within 24 hours.</p>
+        <p class="dropoff-note">We do drop-off details rather than mobile — on purpose. Real water pressure and power on-site means a deeper clean than a driveway mobile setup can manage, and you get your time back instead of waiting around for us to finish.</p>
       </div>
       <div class="booking-wrap">
-        <form class="booking-form" id="bookingForm">
-          <!-- No backend wired up yet: connect this <form> to Formspree / Netlify Forms / EmailJS
-               by setting an action="" and method="POST" once ready. -->
+        <form class="booking-form" id="bookingForm" action="https://formspree.io/f/xkjngvkp" method="POST">
+          <!-- Submits to Formspree. To later swap in your own CRM, just change the action
+               URL above to your CRM's endpoint — the fetch() call below works with any
+               endpoint that accepts a POST of form data. -->
           <div class="form-row">
             <div class="field">
               <label for="name">Full name</label>
@@ -1035,6 +1098,9 @@
                 <option>Interior Refresh — $100</option>
                 <option selected>Signature Detail — $185</option>
                 <option>Ceramic Shine — $350</option>
+                <option>Membership — Basic Upkeep ($59/mo)</option>
+                <option>Membership — Full Upkeep ($99/mo)</option>
+                <option>Membership — Showroom Standing ($179/mo)</option>
                 <option>Not sure — send me a quote</option>
               </select>
             </div>
@@ -1123,6 +1189,7 @@
       <div class="footer-col">
         <h4>Site</h4>
         <a href="#services">Services</a>
+      <a href="#memberships">Memberships</a>
         <a href="#work">Recent Work</a>
         <a href="#reviews">Reviews</a>
         <a href="#booking">Book Now</a>
@@ -1191,14 +1258,32 @@
   syncAfterWidth();
   updateSlider(50);
 
-  // Booking form (no backend yet — shows on-page confirmation)
+  // Booking form — submits to Formspree, shows on-page confirmation on success
   var form = document.getElementById('bookingForm');
   var confirmBox = document.getElementById('formConfirm');
+  var submitBtn = form.querySelector('button[type="submit"]');
   form.addEventListener('submit', function (e) {
     e.preventDefault();
-    confirmBox.classList.add('show');
-    confirmBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    form.reset();
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending…';
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(function (response) {
+      if (response.ok) {
+        confirmBox.classList.add('show');
+        confirmBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        form.reset();
+      } else {
+        alert('Something went wrong sending your request — please call or text (919) 757-1962 instead.');
+      }
+    }).catch(function () {
+      alert('Something went wrong sending your request — please call or text (919) 757-1962 instead.');
+    }).finally(function () {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Request booking';
+    });
   });
 </script>
 
